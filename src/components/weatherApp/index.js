@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { APIKey } from "./weatherSerices/weatherService";
 import { getWeatherIcon } from "./weatherSerices/iconLogic";
 
@@ -70,7 +70,7 @@ const WeatherApp = () => {
           <p> humidity {weatherData?.list?.[0]?.main?.humidity}</p>
           <p> wind{weatherData?.list?.[0]?.wind?.speed}</p>
           <p> Temperature{weatherData?.city?.country}</p>
-          <img src={weatherIcon}></img>
+          <img alt="Weather" src={weatherIcon}></img>
         </div>
       )}
     </>
