@@ -55,7 +55,7 @@ const WeatherApp = () => {
 
   return (
     <>
-      <h1>weather jjjj</h1>
+      <h1>weather</h1>
       <input
         value={searchInput}
         onChange={(e) => {
